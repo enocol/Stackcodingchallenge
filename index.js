@@ -5,12 +5,6 @@ class Stack {
 
   pop() {
     return this.stack.length === 0 ? null : this.stack.pop();
-
-    // if (this.stack.length === 0) {
-    //   return null;
-    // } else {
-    //   this.stack.pop();
-    // }
   }
 
   push(number) {
@@ -31,6 +25,11 @@ class Stack {
 }
 
 let stack = new Stack();
+stack.push(1);
+stack.push(2);
+stack.push(3);
+stack.push(4);
+console.log(stack.pop());
+console.log(stack);
 
 const min = stack.min();
-console.log(min);
